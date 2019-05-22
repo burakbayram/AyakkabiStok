@@ -26,6 +26,7 @@ namespace DAL
         }
         public static bool KomutCalistir(string sql,params SqlParameter[] parametreler)
         {
+            //ado.net
             con.Open();
             SqlCommand cmd = new SqlCommand(sql,con);
             cmd.Connection = con;
